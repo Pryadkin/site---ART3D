@@ -36,7 +36,7 @@ let findTargetElement = function(elem) {
          pictures[count].classList.remove('picture-active')
       };      
       if (elem === pictures[count]) {
-         setSliderImg(count);
+         setSliderImg(count, 0.8);
       };
       count++;
    }
