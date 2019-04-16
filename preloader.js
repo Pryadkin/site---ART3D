@@ -8,7 +8,12 @@ document.body.onload = () => {
    }, 1000);   
 }
 
-
+setTimeout( () => {
+   let preloader = document.querySelector('.preloader');
+   if( !preloader.classList.contains('done') ) {
+      preloader.classList.add('done');
+   }      
+}, 500);
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -51,19 +56,19 @@ document.body.onload = () => {
 // }
 
 
-function image_loaded() {
-   images_loaded_count++;
-   perc_display.innerHTML = ( ((100 / images_total_count ) * images_loaded_count)) + '%';
+// function image_loaded() {
+//    images_loaded_count++;
+//    perc_display.innerHTML = ( ((100 / images_total_count ) * images_loaded_count)) + '%';
 
-   if( images_loaded_count >= images_total_count ) {
-      setTimeout( () => {
-         let preloader = document.querySelector('.preloader');
-         if( !preloader.classList.contains('done') ) {
-            preloader.classList.add('done');
-         }      
-      }, 500); 
-   }
-}
+//    if( images_loaded_count >= images_total_count ) {
+//       setTimeout( () => {
+//          let preloader = document.querySelector('.preloader');
+//          if( !preloader.classList.contains('done') ) {
+//             preloader.classList.add('done');
+//          }      
+//       }, 500); 
+//    }
+// }
    
 
 
