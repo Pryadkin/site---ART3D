@@ -37,7 +37,7 @@ setTimeout( () => {
 
 
 
-// Проценты - поиск изображения по backgrount-image: url()
+// Проценты - поиск изображения по background-image: url()
 // getComputedStyle не поддерживается многими браузерами
 // let 
 //    images = document.querySelectorAll('div[style]'),   
